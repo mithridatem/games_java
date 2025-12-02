@@ -1,15 +1,12 @@
 package com.adrar.games.model;
 
-import org.w3c.dom.ls.LSOutput;
-
-import java.sql.Date;
-
 public class Console {
     //Attributs
 
     private int id;
     private String name;
     private String manufacturer;
+
     //Constructeurs
     //Constructeur vide
     public Console() {}

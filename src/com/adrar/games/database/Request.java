@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import static com.adrar.games.database.Env.*;
 
 public class Request {
-    public static Connection connection;
+    private static final Connection connection;
     static
     {
         try {
@@ -15,5 +15,10 @@ public class Request {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+    }
+    //Méthode
+    public Connection getConnection()
+    {
+        return connection;
     }
 }
