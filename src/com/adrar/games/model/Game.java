@@ -64,7 +64,8 @@ public class Game {
 
     public String toString()
     {
-        return this.title
+        return this.id + " : "
+                + this.title
                 + " : "
                 + this.type
                 + " : "
